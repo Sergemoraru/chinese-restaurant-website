@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const AboutUs = () => {
   return (
-    <div className="bg-red-50 min-h-screen flex flex-col items-center justify-center py-10">
+    <div className="bg-orange-50 min-h-screen flex flex-col items-center justify-center py-10">
       <div className="bg-white shadow-lg rounded-xl p-8 max-w-3xl w-full">
         <h1 className="text-4xl font-semibold mb-6 text-center text-red-600">
           About Golden Dragon

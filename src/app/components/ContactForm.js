@@ -28,64 +28,66 @@ const ContactForm = () => {
   }
 
   return (
-    <div className="bg-white p-10 rounded shadow-md max-w-lg mx-auto mt-10">
-      <h2 className="text-2xl mb-5 text-gray-600">Contact Us</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="mb-5">
-          <label
-            htmlFor="name"
-            className="block mb-2 text-sm font-medium text-gray-600"
+    <div className="bg-orange-50 min-h-screen pt-10">
+      <div className="bg-white p-10 rounded shadow-md max-w-lg mx-auto mt-10">
+        <h2 className="text-2xl mb-5 text-red-600">Contact Us</h2>
+        <form onSubmit={handleSubmit}>
+          <div className="mb-5">
+            <label
+              htmlFor="name"
+              className="block mb-2 text-sm font-medium text-gray-600"
+            >
+              Name:
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              className="w-full p-2 border rounded text-gray-600"
+              onChange={handleChange}
+            />
+          </div>
+          <div className="mb-5">
+            <label
+              htmlFor="email"
+              className="block mb-2 text-sm font-medium text-gray-600"
+            >
+              Email:
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              className="w-full p-2 border rounded text-gray-600"
+              onChange={handleChange}
+            />
+          </div>
+          <div className="mb-5">
+            <label
+              htmlFor="message"
+              className="block mb-2 text-sm font-medium text-gray-600"
+            >
+              Message:
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              className="w-full p-2 border rounded text-gray-600"
+              onChange={handleChange}
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            className="bg-red-500 hover:bg-red-600 text-white p-2 rounded"
           >
-            Name:
-          </label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            required
-            className="w-full p-2 border rounded text-gray-600"
-            onChange={handleChange}
-          />
-        </div>
-        <div className="mb-5">
-          <label
-            htmlFor="email"
-            className="block mb-2 text-sm font-medium text-gray-600"
-          >
-            Email:
-          </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-            className="w-full p-2 border rounded text-gray-600"
-            onChange={handleChange}
-          />
-        </div>
-        <div className="mb-5">
-          <label
-            htmlFor="message"
-            className="block mb-2 text-sm font-medium text-gray-600"
-          >
-            Message:
-          </label>
-          <textarea
-            id="message"
-            name="message"
-            rows="5"
-            required
-            className="w-full p-2 border rounded text-gray-600"
-            onChange={handleChange}
-          ></textarea>
-        </div>
-        <button
-          type="submit"
-          className="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded"
-        >
-          Submit
-        </button>
-      </form>
+            Submit
+          </button>
+        </form>
+      </div>
     </div>
   );
 };
