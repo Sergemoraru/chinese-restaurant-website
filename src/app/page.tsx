@@ -32,14 +32,16 @@ const HomePage = () => {
           <div className="mt-8">
             <div>
               <a
-                href="mailto:reservations@goldendragon.com"
+                href="/reservation"
                 className="bg-red-500 hover:bg-red-600 text-white py-2 px-8 rounded-lg text-xl font-semibold transition-transform transform hover:scale-105"
               >
                 Make a Reservation
               </a>
             </div>
             <div className="mt-8">
-              <a className="bg-red-500 hover:bg-red-600 text-white py-2 px-8 rounded-lg text-xl font-semibold transition-transform transform hover:scale-105">
+              <a 
+                href="/menu"
+                className="bg-red-500 hover:bg-red-600 text-white py-2 px-8 rounded-lg text-xl font-semibold transition-transform transform hover:scale-105">
                 The Menu
               </a>
             </div>
