@@ -13,7 +13,7 @@ const Header = () => {
             height={50}
             className="inline-block mr-12"
           />
-          Golden Dragon
+          <a href="/">Golden Dragon</a>
         </div>
         <nav className="space-x-4">
           <a href="/" className="hover:text-red-300">
