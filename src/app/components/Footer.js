@@ -1,5 +1,8 @@
 import React from "react";
 import Image from "next/image";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import TwitterIcon from "@mui/icons-material/Twitter";
 
 const Footer = () => {
   return (
@@ -28,35 +31,14 @@ const Footer = () => {
             &copy; 2023 Golden Dragon. All rights reserved.
           </div>
           <div className="flex space-x-4">
-
-        *//TODO add social media icons
-
-            <a href="#" className="hover:text-red-300">
-              <Image
-                src="/path_to_facebook_icon.png"
-                alt="Facebook"
-                className="w-6 h-6"
-                height={24}
-                width={24}
-              />
+            <a href="www.facebook.com" className="hover:text-red-300">
+              <FacebookIcon style={{ fontSize: 24 }} />
             </a>
-            <a href="#" className="hover:text-red-300">
-              <Image
-                src="/path_to_instagram_icon.png"
-                alt="Instagram"
-                className="w-6 h-6"
-                height={24}
-                width={24}
-              />
+            <a href="www.instagram.com" className="hover:text-red-300">
+              <InstagramIcon style={{ fontSize: 24 }} />
             </a>
-            <a href="#" className="hover:text-red-300">
-              <Image
-                src="/path_to_twitter_icon.png"
-                alt="Twitter"
-                className="w-6 h-6"
-                height={24}
-                width={24}
-              />
+            <a href="www.twitter.com" className="hover:text-red-300">
+              <TwitterIcon style={{ fontSize: 24 }} />
             </a>
           </div>
         </div>

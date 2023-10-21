@@ -1,12 +1,22 @@
+import Image from "next/image";
 import React from "react";
 
 const Header = () => {
   return (
     <header className="bg-red-600 text-white py-4">
       <div className="container mx-auto px-8 flex justify-between items-center">
-        <div className="text-xl font-semibold text-orange-400/90">Golden Dragon</div>
+        <div className="text-xl font-semibold text-orange-400">
+          <Image
+            src="/dragon.png"
+            alt="Golden Dragon Logo"
+            width={50}
+            height={50}
+            className="inline-block mr-12"
+          />
+          Golden Dragon
+        </div>
         <nav className="space-x-4">
-          <a href="/home" className="hover:text-red-300">
+          <a href="/" className="hover:text-red-300">
             Home
           </a>
           <a href="/menu" className="hover:text-red-300">
